@@ -25,8 +25,9 @@
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#certify">Certificates</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Education</a></li>
+
             <li><a href="#portfolio">projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <div class="bx bx-moon" id="darkmode"></div>
@@ -63,11 +64,6 @@
         <!-- About Content -->
         <div class="about-container">
             <div class="about-text">
-                <p>Logical and organised individual with a strong foundation in computer applications. Ability to
-                    translate business
-                    requirements into innovative software solutions. Good teamwork, interpersonal and communication
-                    skills. Looking to start
-                    a career as an entry-level professional.</p><br>
                 <p>As a dedicated software enthusiast, I hold a BCA degree from Apollo Arts and Science College in
                     Chennai.
                     My passion lies
@@ -172,6 +168,85 @@
 
         </div>
     </section>
+
+    <div class="container" id="certify">
+        <!-- Header -->
+
+        <div class="heading-1">
+            <h2>Professional Certifications</h2>
+            <p>
+                A collection of professional certifications and achievements demonstrating expertise across cloud
+                technologies, security, and DevOps practices.
+            </p>
+            <!-- <h2>Knowledge Stuff</h2> -->
+            <hr>
+        </div>
+        <p></p><br>
+        <!-- Badge Grid -->
+        <div class="badge-grid" id="badgeGrid">
+            <!-- Badges will be populated by JavaScript -->
+        </div>
+
+        <!-- Modal -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal-content">
+                <button class="close-btn" id="closeBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m18 6-12 12" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <div class="badge-image-container">
+                            <img id="modalBadgeImage" src="" alt="" class="modal-badge-img">
+                        </div>
+                        <h2 id="modalTitle" class="modal-title"></h2>
+                        <p id="modalIssuer" class="modal-issuer"></p>
+                    </div>
+
+                    <div class="modal-description">
+                        <p id="modalDescription" class="description-text"></p>
+                    </div>
+
+                    <div class="modal-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Category</span>
+                            <span id="modalCategory" class="detail-value"></span>
+                        </div>
+                        <div class="detail-row" id="earnedDateRow">
+                            <span class="detail-label">Earned</span>
+                            <span id="modalEarnedDate" class="detail-value"></span>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button class="action-btn community-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="m22 21-2-2" />
+                                <path d="m16 16-2-2" />
+                            </svg>
+                            Who's in the Club?
+                        </button>
+                        <button class="action-btn verify-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m7 7 10 10-5 5-5-5Z" />
+                                <path d="m7 7 5-5 5 5" />
+                                <path d="m7 7 5 5" />
+                            </svg>
+                            Verify
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Projects -->
     <section class="portfolio" id="portfolio">
@@ -351,76 +426,7 @@
     </section>
 
     <!-- Services -->
-    <section class="services" id="services">
-        <div class="heading-1">
-            <h2>Certificates</h2>
-            <hr>
-        </div>
-
-        <div class="services-content-1">
-            <div class="services-box-1">
-                <a href="https://www.credly.com/earner/earned/badge/6daa3a54-11f4-4452-8a2a-94cc70896d2b">
-                    <img src="https://images.credly.com/size/680x680/images/650ebdbe-d526-4b47-b186-c1ab516b5a7c/image.png"
-                        alt="">
-                    <h3>MongoDB Associate Developer</h3>
-                    <h4>MongoDB - June 2025</h4>
-                </a>
-
-            </div>
-            <div class="services-box-1">
-                <a href="https://www.credly.com/earner/earned/badge/7d44d3bd-aa4a-484b-a534-c01b61194420">
-                    <img src="https://images.credly.com/size/680x680/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png"
-                        alt="">
-                    <h3>Github Foundation</h3>
-                    <h4>Github - March 2025</h4>
-                </a>
-
-            </div>
-            <div class="services-box-1">
-                <a href="src/pdf/Java VSC.png">
-                    <img src="src/udemy.jpg" alt="">
-                    <h3>Java Using Visual Studio</h3>
-                    <h4>Udemy - Sept 2024</h4>
-                </a>
-
-            </div>
-            <div class="services-box-1">
-
-                <img src="src/udemy.jpg" alt="">
-                <a href="src/pdf/Udamy Front-endCertificate.pdf">
-                    <h3>Front-End development</h3>
-                    <h4>Udemy - 2024</h4>
-                </a>
-            </div>
-            <!-- Box 2 -->
-            <div class="services-box-1">
-                <a href="src/pdf/CoreJava.pdf">
-                    <img src="src/marcello1.jpg" alt="">
-                    <h3>Marcello Tech, Trichy</h3>
-                    <h4>Core Java - 2023</h4>
-                </a>
-
-            </div>
-
-            <div class="services-box-1">
-                <a href="src/pdf/Certificate_AL_MS Overall.pdf">
-                    <img src="src/micro-naan.png" alt="">
-                    <h3>Microsoft office 365</h3>
-                    <h4>partnership of Naan Mudhalvan - 2023</h4>
-                </a>
-
-            </div>
-
-            <div class="services-box-1">
-                <a href="src/pdf/Diploma CA.pdf">
-                    <img src="src/dca2.jpg" alt="">
-                    <h3>Institution of Digital Education & Employment Developments</h3>
-                    <h4>Diploma in Computer Application - 2019</h4>
-                </a>
-
-            </div>
-        </div>
-
+    <section class="services" id="contact">
         <div class="heading-1">
             <h2>Education Details</h2>
             <hr>
